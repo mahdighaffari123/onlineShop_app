@@ -1,11 +1,15 @@
-import { View, Text } from "react-native";
-import React from "react";
+import { ScrollView, View } from "react-native";
+import CatItems from "./CatItems";
+import ProductSlider from "./ProductSlider";
+import Slider from "./Slider";
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <ScrollView>
+      <Slider />
+      <CatItems />
+      <ProductSlider />
+    </ScrollView>
   );
 };
 
