@@ -38,7 +38,7 @@ const TabNavigator = () => {
           marginHorizontal: 10,
           marginVertical: 10,
         },
-        tabBarLabelStyle: { paddingBottom: 5 },
+        tabBarLabelStyle: { paddingBottom: 5, fontFamily: "sansMedium" },
         tabBarInactiveTintColor: "#000",
         tabBarActiveTintColor: "#0068c9",
         // headerShown: Platform.OS === "ios" ? true : false,
@@ -69,7 +69,7 @@ const TabNavigator = () => {
       <Tab.Screen
         name="Bookmark"
         component={Bookmark}
-        options={{ tabBarLabel: "علاقه مندی ها" }}
+        options={{ tabBarLabel: "علاقه مندی" }}
       />
     </Tab.Navigator>
   );

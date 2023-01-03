@@ -3,11 +3,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import TabNavigator from "./TabNavigator";
 import Login from "../components/Login/Login";
 
-const StackNavigator = () => {
+const StackNavigator = ({ onLayoutRootView }) => {
   const Stack = createNativeStackNavigator();
 
   return (
-    <NavigationContainer>
+    <NavigationContainer onReady={onLayoutRootView}>
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
