@@ -4,9 +4,12 @@ import React from "react";
 const CatItems = () => {
   const data = [...new Array(8).keys()];
   return (
-    <View className="flex-row flex-wrap justify-center gap-y-2 gap-x-2">
+    <View className="flex-row flex-wrap justify-between mx-2 gap-y-2">
       {data?.map((index) => (
-        <TouchableOpacity className="w-[22%] items-center bg-gray-300 h-[80px] justify-center rounded-md">
+        <TouchableOpacity
+          className="w-[22%] items-center bg-gray-300 h-[80px] justify-center rounded-md"
+          key={index}
+        >
           <Text>{index}</Text>
         </TouchableOpacity>
       ))}

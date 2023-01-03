@@ -1,9 +1,10 @@
+import { useNavigation } from "@react-navigation/native";
 import { View, Text } from "react-native";
-import React from "react";
 
 const Account = () => {
+  const navigate = useNavigation();
   return (
-    <View>
+    <View onTouchStart={() => navigate.navigate("Login")} className="flex-1">
       <Text>Account</Text>
     </View>
   );

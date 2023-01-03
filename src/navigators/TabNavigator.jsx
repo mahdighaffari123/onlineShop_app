@@ -5,7 +5,6 @@ import Categories from "../screens/Categories/Categories";
 import Home from "../screens/Home/Home";
 import Cart from "../screens/Cart/Cart";
 import Bookmark from "../screens/Bookmark/Bookmark";
-import { Platform } from "react-native";
 
 const Tab = createBottomTabNavigator();
 
@@ -45,6 +44,7 @@ const TabNavigator = () => {
         // headerShown: Platform.OS === "ios" ? true : false,
         headerShown: false,
       })}
+      initialRouteName="Home"
     >
       <Tab.Screen
         name="Account"

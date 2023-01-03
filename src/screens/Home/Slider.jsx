@@ -15,7 +15,7 @@ const Slider = () => {
         mode="parallax"
         autoPlay={true}
         data={[...new Array(6).keys()]}
-        scrollAnimationDuration={500}
+        scrollAnimationDuration={1000}
         autoPlayReverse
         renderItem={({ index }) => (
           <View className="items-center justify-center flex-1 bg-gray-300 rounded-lg">
