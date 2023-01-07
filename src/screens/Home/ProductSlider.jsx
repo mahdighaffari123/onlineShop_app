@@ -5,8 +5,8 @@ import ProductSliderItem from "./ProductSliderItem";
 const ProductSlider = () => {
   const data = [...new Array(8).keys()];
   return (
-    <View className="my-2 mr-2">
-      <View className="flex-row items-center justify-between ml-2">
+    <View className="my-2 ml-0">
+      <View className="flex-row items-center justify-between mx-2">
         <Text className="mb-2 font-bold">Products</Text>
         <Text className="mb-2">more</Text>
       </View>

@@ -1,7 +1,8 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import TabNavigator from "./TabNavigator";
-import Login from "../components/Login/Login";
+import Login from "../screens/Login/Login";
+import Search from "../screens/Search/Search";
 
 const StackNavigator = ({ onLayoutRootView }) => {
   const Stack = createNativeStackNavigator();
@@ -15,6 +16,11 @@ const StackNavigator = ({ onLayoutRootView }) => {
       >
         <Stack.Screen name="Tab" component={TabNavigator} />
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen
+          name="Search"
+          component={Search}
+          options={{ animation: "fade_from_bottom" }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
